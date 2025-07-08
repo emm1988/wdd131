@@ -71,7 +71,7 @@ main {
     padding: 20px;
 }
 
-.card h1 {
+.card h2 {
     background-color:var(--primary-color);
     color: white;
     padding: 12px 0;
