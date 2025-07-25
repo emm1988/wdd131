@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Temple Album</title>
+        <meta name="description" content="My name is Emmanuel Jove and this is my web page. This is for WDD 131 - Web Fundamentals Dynamic class and the purpose of this web page is to practice website design and development using HTML, CSS, and JavaScript.">
+        <meta name="author" content="Emmanuel Jove">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/temples.css">
         <link rel="stylesheet" href="styles/temples-large.css">
         
@@ -11,58 +16,62 @@
     <body>
         <header>
             <h1>Temple Album</h1>
+            <a id="menu" href="#"></a>
             <nav>
-                <ul>
+                <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Old</a></li>
                     <li><a href="contact.html">New</a></li>
                     <li><a href="about.html">Large</a></li>
                     <li><a href="contact.html">Small</a></li>
                 </ul>
+            </nav>
         </header>
         <main>
             <h1>Temples</h1>
             <figure>
-                <img src="images/Bolivia_temple.webp" alt="Bolivia_temple">
-                <figcaption>Temple 1</figcaption>
+                <img src="images/Temple.jpg" alt="Bolivia_temple">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 2">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple3.jpg" alt="Temple 3">
-                <figcaption>Temple 3</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 3">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple4.jpg" alt="Temple 4">
-                <figcaption>Temple 4</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 4">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple5.jpg" alt="Temple 5">
-                <figcaption>Temple 5</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 5">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple6.jpg" alt="Temple 6">
-                <figcaption>Temple 6</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 6">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple7.jpg" alt="Temple 7">
-                <figcaption>Temple 7</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 7">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple8.jpg" alt="Temple 8">
-                <figcaption>Temple 8</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 8">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
             <figure>
-                <img src="images/temple9.jpg" alt="Temple 9">
-                <figcaption>Temple 9</figcaption>
+                <img src="images/Temple.jpg" alt="Temple 9">
+                <figcaption>Cochabamba - Bolivia</figcaption>
             </figure>
         </main>
         <footer>
             <p>© <span id="currentyear"></span> Emmanuel Jove - La Paz, Bolivia</p>
             <p id="last-updated">Last updated: <span id="last-updated-date"></span></p>
         </footer>
-        <script src="week02/scripts/getdates2.js" defer></script>
+
+        <script src="scripts/getdates2.js" defer></script>
+        <script src="scripts/temples.js" defer></script>
     </body>
 </html>
