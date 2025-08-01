@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Place</title>
+        <meta name="description" content="My name is Emmanuel Jove and this is my web page. This is for WDD 131 - Web Fundamentals Dynamic class and the purpose of this web page is to practice website design and development using HTML, CSS, and JavaScript.">
+        <meta name="author" content="Emmanuel Jove">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="week03/styles/place.css">
+       <script src="week03/scripts/place.js" defer></script>
+       <script src="scripts/getdates.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Place Album</h1>
+        </header>
+        <main>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="week03/images/hero-large.webp">
+                <source media="(min-width: 550px)" srcset="week03/images/hero-medium.webp">
+                <img src="week03/images/hero-small.webp" alt="A beautiful place in nature" width="400" height="200">
+            </picture>
+            <picture id="sea-turtle">
+                <img src="week03/images/sea-turtle.webp" alt="A sea turtle swimming in the ocean" width="400" height="300">
+            </picture>
+            <section id="data">
+                <h2>DATA</h2>
+                <ul>
+                    <li><strong>Area:</strong> Approximately 8,010 km²</li>
+                    <li><strong>Population:</strong> Around 25,000 inhabitants</li>
+                    <li><strong>Capital:</strong> Puerto Baquerizo Moreno (on San Cristóbal Island)</li>
+                    <li><strong>Languages:</strong> Spanish</li>
+                    <li><strong>Currency:</strong> United States Dollar (USD)</li>
+                    <li><strong>Time Zone:</strong> UTC−6</li>
+                    <li><strong>Phone Code:</strong> +593 (Ecuador)</li>
+                    <li><strong>Internet Domain:</strong> .ec</li>
+            </section>
+            <section id="weather">
+                <h2>WEATHER <span aria-label="sun behind cloud" role="img">🌤️</span></h2>
+                <img src="week03/images/1075473_cloud_sky_summer_sun_sunshine_icon.svg" alt="Weather icon" width="50" height="50">
+                <ul>
+                    <li><strong>Temperature:</strong> 10 °C</li>
+                    <li><strong>Conditions:</strong> Partly cloudy</li>
+                    <li><strong>Wind:</strong> 5 km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill-value"></span></li>
+                </ul>
+            </section>
+
+        </main>
+        <footer>
+            <p>© <span id="currentyear"></span> 🐢 Emmanuel Jove - Galapagos 🐢</p>
+            <p id="last-updated">Last updated: <span id="last-updated-date"></span></p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,199 @@
+:root{
+    --primary-color: navy;
+    --secondary-color: yellow;
+    --text-color: #faf8f8;
+    --font-family: 'Merriweather', serif;
+    --heading-font-family: 'Bebas Neue', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 15px 40px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}  
+
+h1 {
+    font-size: 2.8em;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px;
+    margin: 0px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: var(--heading-font-family);
+}
+
+picture img {
+    border-top: 20px solid var(--secondary-color);
+    border-bottom: 15px solid var(--secondary-color);
+    width: 100%;
+    height: auto;
+}
+
+
+section {
+    background-color: rgba(248, 247, 247, 0.7); /* semi-transparent black */
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+}
+
+#data {
+    float: left;
+    position: relative;
+    top:-830px;
+    left: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+#weather {
+    float: right;
+    position: relative;
+    top: -470px;
+    right: 20px;
+    width: 400px;
+    height: 250px;
+}
+
+h2 {
+    background-color: navy;
+    padding: 10px 25px;
+    text-align: left;
+    border-radius: 4px;
+    position: relative;
+    right: 35px;
+    top: -15px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: var(--heading-font-family);
+    letter-spacing: 5px;
+    color: var(--text-color);
+}
+
+section img {
+    display: none;
+}
+
+#sea-turtle img {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+strong {
+    color: rgb(221, 45, 45);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header {
+
+        flex-direction: column;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    picture img {
+        border-top-width: 10px;
+    }
+
+    picture img {
+        display: none;
+    }
+
+    #sea-turtle img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #data,
+    #weather {
+        float: none;
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+    
+    strong {
+        color: black;
+        
+    }
+    section {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+        text-align: center;
+    }
+    section img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px;
+    }
+    h2 {
+        right: 0;
+        top: 0;
+        text-align: center;
+        padding: 0px;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        background-color: transparent;
+        color: black;
+    }
+    h2 span[role="img"] {
+        display: none;
+    }
+
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p {
+    margin: 0;
+}
+
