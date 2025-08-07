@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title>
+        <meta name="description" content="My name is Emmanuel Jove and this is my web page. This is for WDD 131 - Web Fundamentals Dynamic class and the purpose of this web page is to practice website design and development using HTML, CSS, and JavaScript.">
+        <meta name="author" content="Emmanuel Jove">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <h1>Temples Album</h1>
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Temples</h2>
+            <div 
+            class="temples-container">
+            </div>
+        </main>
+        <footer>
+            <p>© <span id="currentyear"></span> Emmanuel Jove - La Paz, Bolivia</p>
+            <p id="last-updated">Last updated: <span id="last-updated-date"></span></p>
+        </footer>
+
+        <script src="scripts/getdates2.js" defer></script>
+        <script src="scripts/filtered-temples.js" defer></script>
+    </body>
+</html>
