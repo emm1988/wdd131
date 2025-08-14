@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tours confirmation</title>
+    </head>
+    <body>
+    <header>
+        <h1>Thank You for Scheduling a Tour!</h1>
+    </header>
+    <main>
+        <p>Your tour has been scheduled successfully.</p>
+        <p>We will contact you shortly with the details.</p>
+        <p id="counter"></p>
+        <p id="details"></p>
+
+        <script>
+        const count = localStorage.getItem("bookingCount") || 0;
+        document.getElementById("counter").textContent = `You have booked ${count} tour(s).`;
+
+        const lastBooking = JSON.parse(localStorage.getItem("lastBooking"));
+        if (lastBooking) {
+            document.getElementById("details").textContent =
+                `Last booking: ${lastBooking.destination} on ${lastBooking.date}`;
+        }
+        </script>
+    </body>
+</html>
