@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review</title>
+        <meta name="description" content="My name is Emmanuel Jove and this is my web page. This is for WDD 131 - Web Fundamentals Dynamic class and the purpose of this web page is to practice website design and development using HTML, CSS, and JavaScript.">
+        <meta name="author" content="Emmanuel Jove">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form action="review.html" method="get">
+                <label for="product">Product Name:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+                
+                <!-- Rating -->
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1">★</label>
+                    </div>
+                </fieldset>
+
+                <!-- Installation -->
+                <label for="installDate">Date of Installation:</label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <!-- Features -->
+                <fieldset>
+                    <legend>Useful Features (check all that apply):</legend>
+                    <label><input type="checkbox" id="feature1" name="features" value="durable"> Durable</label>
+                    <label><input type="checkbox" id="feature2" name="features" value="lightweight"> Lightweight</label>
+                    <label><input type="checkbox" id="feature3" name="features" value="energy efficient"> Energy Efficient</label>
+                    <label><input type="checkbox" id="feature4" name="features" value="compact"> Compact</label>
+                </fieldset>
+
+                <!-- Written Review -->
+                <label for="review">Written Review:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Write your review here..."></textarea>
+
+                <!-- User Name -->
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Review">
+            </form>
+        </main>
+
+        <footer>
+            <p>© <span id="currentyear"></span> 🏜️ Emmanuel Jove - La Paz, Bolivia 🏜️</p>
+            <p id="last-updated">Last updated: <span id="last-updated-date"></span></p>
+        </footer>
+
+        <script src="scripts/getdates2.js"></script>
+        <script src="scripts/form.js"></script>
+    </body>
+</html>
